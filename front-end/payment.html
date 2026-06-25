@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Payment Gateway</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <div class="payment-container">
+
+        <h1>Payment Gateway</h1>
+
+        <p>Select Payment Method</p>
+
+        <div class="payment-options">
+
+            <label>
+                <input type="radio" name="payment" value="UPI">
+                UPI
+            </label>
+
+            <label>
+                <input type="radio" name="payment" value="Credit Card">
+                Credit Card
+            </label>
+
+            <label>
+                <input type="radio" name="payment" value="Net Banking">
+                Net Banking
+            </label>
+
+            <label>
+                <input type="radio" name="payment" value="Cash On Delivery">
+                Cash On Delivery
+            </label>
+
+        </div>
+
+        <button id="placeOrderBtn" onclick="placeOrder()">
+            Place Order
+         </button>
+       <button
+        onclick="window.location.href='index.html'">
+
+            Back to Home
+
+        </button>
+    </div>
+<footer>
+
+    ShopSphere © 2026
+
+</footer>
+    <script src="js/payment.js"></script>
+
+</body>
+
+</html>

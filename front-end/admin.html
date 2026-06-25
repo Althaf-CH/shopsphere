@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="dashboard-header">
+
+    <h1>Admin Dashboard</h1>
+
+</div>
+
+    <div class="dashboard-stats">
+
+    <div class="stat-card">
+        <h3>Total Products</h3>
+        <p id="totalProducts">0</p>
+    </div>
+
+    <div class="stat-card">
+        <h3>Total Orders</h3>
+        <p id="totalOrders">0</p>
+    </div>
+
+    <div class="stat-card">
+        <h3>Total Users</h3>
+        <p id="totalUsers">0</p>
+    </div>
+
+    <div class="stat-card">
+        <h3>Revenue</h3>
+        <p id="totalRevenue">₹0</p>
+    </div>
+
+</div>
+ 
+<div class="admin-section">
+    <h2>Add Product</h2>
+
+    <input
+        type="text"
+        id="name"
+        placeholder="Product Name"
+    >
+
+    <br><br>
+
+    <input
+        type="text"
+        id="description"
+        placeholder="Description"
+    >
+
+    <br><br>
+
+    <input
+        type="number"
+        id="price"
+        placeholder="Price"
+    >
+
+    <br><br>
+
+    <select id="category">
+
+    <option value="">Select Category</option>
+
+    <option value="Electronics">Electronics</option>
+
+    <option value="Fashion">Fashion</option>
+
+    <option value="Appliances">Appliances</option>
+
+    <option value="Sports">Sports</option>
+
+    <option value="Beauty">Beauty</option>
+
+    <option value="Daily Needs">Daily Needs</option>
+
+    <option value="Travel">Travel</option>
+
+    <option value="Kids & Toys">Kids & Toys</option>
+
+    <option value="Furniture">Furniture</option>
+
+    <option value="Home">Home</option>
+
+    <option value="Groceries">Groceries</option>
+
+    <option value="Books & Education">
+        Books & Education
+    </option>
+
+    <option value="Games">Games</option>
+
+</select>
+<input
+    type="text"
+    id="image"
+    placeholder="Image URL"
+>
+
+<br><br>
+    <br><br>
+
+    <button onclick="addProduct()">
+        Add Product
+    </button>
+
+<hr>
+</div>  
+
+<div class="admin-section">
+<h2>Edit Product</h2>
+
+<input type="hidden" id="editId">
+
+<input
+type="text"
+id="editName"
+placeholder="Product Name">
+
+<br><br>
+
+<input
+type="text"
+id="editDescription"
+placeholder="Description">
+
+<br><br>
+
+<input
+type="number"
+id="editPrice"
+placeholder="Price">
+
+
+
+<br><br>
+
+<select id="editCategory">
+
+<option value="Electronics">Electronics</option>
+<option value="Fashion">Fashion</option>
+<option value="Appliances">Appliances</option>
+<option value="Sports">Sports</option>
+<option value="Beauty">Beauty</option>
+<option value="Daily Needs">Daily Needs</option>
+<option value="Travel">Travel</option>
+<option value="Kids & Toys">Kids & Toys</option>
+<option value="Furniture">Furniture</option>
+<option value="Home">Home</option>
+<option value="Groceries">Groceries</option>
+<option value="Books & Education">Books & Education</option>
+<option value="Games">Games</option>
+
+</select>
+
+<br><br>
+
+<input
+type="text"
+id="editImage"
+placeholder="Image URL">
+
+<br><br>
+
+<button onclick="updateProduct()">
+Save Changes
+</button>
+
+    <h2>Products</h2>
+
+    <div id="productsContainer"></div>
+
+    <hr>
+
+</div>
+<div class="admin-section">    
+<h2>Manage Orders</h2>
+
+<div id="ordersContainer"></div>
+
+<hr>
+</div>  
+<footer>
+
+    ShopSphere © 2026
+
+</footer>
+    <script src="js/admin.js"></script>
+
+</body>
+
+
+</html>

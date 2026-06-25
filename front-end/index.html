@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>ShopSphere</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<div class="navbar">
+
+    <h1>ShopSphere</h1>
+
+    <div>
+
+        <a href="index.html">
+            <button>Home</button>
+        </a>
+
+        <button
+onclick="window.location.href='cart.html'">
+
+Cart (<span id="cartCount">0</span>)
+
+</button>
+
+        <a href="orders.html">
+            <button>Orders</button>
+        </a>
+
+        <button onclick="logout()">
+            Logout
+        </button>
+
+    </div>
+
+</div><br><br>
+
+<input
+type="text"
+id="searchProduct"
+placeholder="Search Products">
+
+<div class="filter-buttons">
+
+<select id="filterCategory" onchange="filterProducts()">
+
+    <option value="All">All Categories</option>
+
+    <option value="Electronics">Electronics</option>
+
+    <option value="Fashion">Fashion</option>
+
+    <option value="Appliances">Appliances</option>
+
+    <option value="Sports">Sports</option>
+
+    <option value="Beauty">Beauty</option>
+
+    <option value="Daily Needs">Daily Needs</option>
+
+    <option value="Travel">Travel</option>
+
+    <option value="Kids & Toys">Kids & Toys</option>
+
+    <option value="Furniture">Furniture</option>
+
+    <option value="Home">Home</option>
+
+    <option value="Groceries">Groceries</option>
+
+    <option value="Books & Education">
+        Books & Education
+    </option>
+
+    <option value="Games">Games</option>
+
+</select>
+</div>
+
+<div id="productContainer" class="product-container"></div>
+
+<div id="productList"></div>
+<footer>
+
+    ShopSphere © 2026
+
+</footer>
+<script src="js/product.js"></script>
+
+</body>
+
+</html>
