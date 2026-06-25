@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:5000";
+const API_URL = "https://shopsphere-production-963f.up.railway.app";
 
 async function placeOrder(){
 

@@ -1,5 +1,5 @@
 const API_URL =
-"http://localhost:5000";
+"https://shopsphere-production-963f.up.railway.app";
 
 //go to payment page
 function goToPayment(){
